@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         modal.style.display = "flex"; // Mostramos el modal
         form.reset(); // Limpiamos el formulario
         setTimeout(() => { 
-          window.location.href = "Animerank.html"; // Redirigimos a otra página después de 3 segundos
+          window.location.href = "index.html"; // Redirigimos a otra página después de 3 segundos
         }, 3000); 
       }
     });
