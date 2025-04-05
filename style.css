@@ -1,0 +1,341 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: Arial;
+}
+
+
+button{
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    border-color: white;
+    padding: 10px;
+    
+}
+
+button:hover{
+    background-color: orange;
+}
+
+.container{
+    /* cada vez que agrandamos la pagina cuando pase de 1400 el contenido se irá centrando  */
+    max-width: 1400px;
+    margin:auto;
+    background-color: black;
+   
+}
+
+header{
+    background-color: black;
+    
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .logo{
+    margin: 0;
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+}
+
+header li{
+    padding: 5px 12px;
+}
+
+
+header a{
+    
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+header a:hover{
+   color: orange;
+}
+
+#wallpaper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    /* Fondo de imagen , para hacer mas contraste entre el fondo y la letra, añadimos un gradiente
+    para ponerlo mas oscuro. Luego ponemos la imagen, hacemos un no repeat para que nos se duplique varias veces
+    Cover: Es para que ocupe todo el espacio dispnible y lo posicionamos que centre la imagen*/
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    )
+    ,url("IMAGENES/wp5924564.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#wallpaper h1{
+    color: white;
+    font-size: 4em;
+}
+
+#wallpaper p{
+    color: white;
+    font-size: 2em;
+    padding: 15px;
+}
+
+#wallpaper form{
+    padding: 25px;
+}
+
+#wallpaper button{
+    cursor:pointer;
+}
+
+#animes{
+    background-color: black;
+    
+    }
+    
+    #animes h2{
+        color: white;
+        margin: 0;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        font-size: 2em;
+        
+    }
+        
+    #animes .lista{
+        
+        display: grid;
+        /* hueco en la columna */
+        grid-column-gap: 32px;
+        grid-row-gap: 32px;
+    }
+      
+    
+    #animes .lista img{
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        transition: all 300ms;
+        position: relative;
+    }
+
+    #animes img:hover{
+        transform: scale(1.05);
+    }
+
+    #animes h2{
+        color: white;
+        margin: 0;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+ footer{
+    background-color: black;
+}
+
+footer p{
+    margin: 0;
+    color: white;
+    justify-content: center;
+    font-size: 1em;
+}
+
+footer p:hover{
+    color: orange;
+}
+
+footer .container{
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 12px;
+    border: solid 1px;
+    border-color: aliceblue;
+}
+
+
+
+@media (width < 300px) {
+    #animes .lista{
+    padding: 30px;
+    grid-template-columns: 1fr ;
+}
+
+}
+
+@media (width > 300px) {
+    #animes .lista{
+    padding: 30px;
+    grid-template-columns: 1fr 1fr ;
+    }
+}
+
+
+@media (min-width: 850px){
+
+    /* Header se quede fijo siempre hay que poner el width */
+header{
+    width: 100%;
+}
+
+header .logo{
+    padding: 0px;
+  
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 35px;
+    
+}
+
+
+header nav{
+    flex-direction: row;
+    padding-bottom: 0;
+}
+
+#wallpaper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    /* Fondo de imagen , para hacer mas contraste entre el fondo y la letra, añadimos un gradiente
+    para ponerlo mas oscuro. Luego ponemos la imagen, hacemos un no repeat para que nos se duplique varias veces
+    Cover: Es para que ocupe todo el espacio dispnible y lo posicionamos que centre la imagen*/
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    )
+    ,url("IMAGENES/wp5924564.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#wallpaper h1{
+    color: white;
+    font-size: 4em;
+}
+
+#wallpaper p{
+    color: white;
+    font-size: 2em;
+    padding: 15px;
+}
+
+#wallpaper form{
+    padding: 25px;
+}
+
+#animes{
+background-color: black;
+
+}
+
+#animes h2{
+    color: white;
+    margin: 0;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+}
+    
+
+#animes .lista{
+        
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* ponemos las columnas */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* hueco en la columna */
+    grid-row-gap: 30px;
+    grid-column-gap: 32px;
+}
+
+#animes a{
+    cursor:pointer;
+    
+}
+
+#animes .lista img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+footer .container{
+    margin: 0;
+    height: 140px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 12px 0px;
+    border: solid 1px;
+    border-color: white;
+   
+}
+
+
+
+footer p{
+    justify-content: center;
+    font-size: 1em;
+}
+
+
+}
+
+

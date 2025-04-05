@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <link rel="icon" type="imagen/png" href="IMAGENES/icono.png">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="formulario.css">
+    <script defer src="./formulario.js"></script>
+    
+  </head>
+
+  <body>
+	
+
+<section class="formulario_anime">
+     <div class="formulario">
+            <h1>FORMULARIO ANIME</h1>
+            <p>Con este formulario podrás enviarnos que anime nos recomiendas para poder subirlo a nuestra pagina.</p>
+            
+            <form id="form" action="/">
+
+                <div class="input-control">
+                    <label for="username">Nombre</label>
+                    <input id="username" name="username" type="text" placeholder="Nombre" maxlength="15">
+                <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="text" placeholder="Email" maxlength="30">
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="anime">Anime</label>
+                    <input id="anime" name="anime" type="text" placeholder="Anime" maxlength="20">
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="categoria">Categoria</label>
+                    <select name="categoria" id="categoria">
+                      <option value="nada">Selecciona una categoría</option>
+                      <option value="romance">Romance</option>
+                      <option value="accion">Acción</option>
+                      <option value="comedia">Comedia</option>
+                      <option value="misterio">Misterio</option>
+                      <option value="fantasia">Fantasía</option>
+                      <option value="thriller">Thriller</option>
+                    </select>
+                    <div class="error"></div>
+                </div>
+                      
+                <button type="submit">ENVIAR</button>
+                <button type="button" onclick="location.href='Animerank.html'">VOLVER</button>
+            </form>
+        </div>
+
+        <div id="modal" class="modal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>¡Gracias por tu recomendación! 🎉</h2>
+              <p>La revisaremos pronto y esperamos subirla a nuestra página.</p>
+          </div>
+      </div>
+    </section>
+      
+        
+  </body>
+
+</html>
