@@ -84,8 +84,6 @@ header a:hover{
 }
 
 
-
-
 #anime h1{
     color: black;
     margin: 0;
@@ -136,8 +134,6 @@ header a:hover{
     font-size: 1em;
 }
       
-
-
 
 .videocontainer .ratio {
     display: flex;
@@ -228,7 +224,18 @@ footer p{
     font-size: 1em;
 }
 
+@media(min-width:500px ){
+    #anime h1{
+        color: black;
+        margin: 0;
+        padding: 50px;
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+            
+        }
 
+}
 
 @media (min-width: 850px){
 
