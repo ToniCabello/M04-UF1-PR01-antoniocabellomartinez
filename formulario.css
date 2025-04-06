@@ -149,6 +149,7 @@ body{
         opacity: 0; /* Empieza totalmente transparente */
         transform: scale(0.9); /* Empieza un poco más pequeño */
     }
+}
 
 @media (min-width: 850px){
     
